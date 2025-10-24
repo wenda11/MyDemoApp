@@ -1,8 +1,14 @@
 # My-Demo-App-tests
 
-Test cases are located in src/features/testCases.feature. Repository also consist of 3 automated test cases, located in src/features/testCases.feature, for My Demo App, which is located in /apps. Steps for each tests are located in src/steps/steps.ts. In src/screens you can find files for main screens with defined selectors for elements used for tests. 
+The test cases are located in src/features/testCases.feature.
+This repository consists of three automated test cases for My Demo App, which is located in the /apps directory.
 
-**What is needed to setup**
+Steps for each test are defined in src/steps/steps.ts.
+In src/screens, you can find files for the main screens with defined selectors for the elements used in the tests.
+
+At the moment, the tests cover only the Android version of the application due to time constraints. However, the repository is prepared for both iOS and Android.
+
+**Setup Requirements**
 
 Install node
 Install Xcode
@@ -13,6 +19,9 @@ Install Appium + WebdriverIO
 Setup tconfig and wdio.conf
 Setup wdio.android.conf files using Appium inspector (capability builder)
 
+**To enable iOS testing:**
+Set up wdio.ios.conf.ts
+Update selectors as needed
 
 **How to run test**
-You can run the tests using command "npm run test:android" 
+Run the tests with the following command: "npm run test:android"
